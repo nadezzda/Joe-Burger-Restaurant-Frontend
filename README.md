@@ -1,4 +1,4 @@
-# joe-burger-restaurant-frontend
+# frontend
 
 ## Project setup
 ```
