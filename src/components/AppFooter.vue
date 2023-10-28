@@ -14,9 +14,6 @@ export default {
 footer {
   background-color: blueviolet;
   color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   height: 40px;
   text-align: center;
 }

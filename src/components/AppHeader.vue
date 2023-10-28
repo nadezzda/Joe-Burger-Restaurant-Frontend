@@ -16,10 +16,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 header {
   display: flex;
-  background-color: rgb(50, 68, 68);
+  background-color: blueviolet;
 }
 nav {
   margin: auto;
@@ -28,7 +28,8 @@ nav {
   text-align: center;
 }
 a {
-  color: white;
+  color: white !important;
+  text-decoration: none !important;
   margin: 8px;
 }
 </style>
