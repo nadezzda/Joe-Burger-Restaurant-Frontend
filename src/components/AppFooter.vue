@@ -17,7 +17,4 @@ footer {
   height: 40px;
   text-align: center;
 }
-p {
-  margin: 8px;
-}
 </style>
