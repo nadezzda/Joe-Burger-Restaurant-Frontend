@@ -1,16 +1,13 @@
 <template>
   <div>
-    <h1>
-      Увійти <br />
-      в особистий кабінет
-    </h1>
+    <h1>Зареєструватись</h1>
     <form>
+      <input type="text" placeholder="Введіть своє ім'я" />
       <input type="email" placeholder="Введіть свій email" />
-      <input type="password" placeholder="Введіть свій пароль" />
-      <a href="#">Забули пароль?</a>
-      <button class="btn btn-info">Увійти</button>
+      <input type="password" placeholder="Придумайте пароль" />
+      <button class="btn btn-info">Зареєструватись</button>
     </form>
-    <p>Немає акаунта? <a href="/sign-up">Зареєструйся</a></p>
+    <p>Вже є акаунт? <a href="/login">Увійди</a></p>
   </div>
 </template>
 <script lang="ts">
@@ -25,8 +22,8 @@ div {
   background-size: cover;
   h1 {
     color: rgba(255, 255, 255, 0.802);
-    padding-top: 200px;
     text-align: center;
+    padding-top: 200px;
     padding-bottom: 50px;
   }
   form {
@@ -55,7 +52,7 @@ div {
     color: rgba(255, 255, 255, 0.802);
     margin: auto;
     width: 15%;
-    padding-top: 6%;
+    padding-top: 5.5%;
     padding-bottom: 10%;
   }
 }

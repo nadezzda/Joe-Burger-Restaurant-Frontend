@@ -5,7 +5,8 @@
       <a href="/">Головна</a>
       <a href="/menu">Меню</a>
       <a href="/restaurants">Заклади</a>
-      <a href="/login">Увійти</a>
+      <a class="btn btn-info" href="/login">Вхід</a>
+      <a class="btn btn-info" href="/sign-up">Реєстрація</a>
     </nav>
   </header>
 </template>

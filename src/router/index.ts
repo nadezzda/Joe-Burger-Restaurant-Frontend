@@ -1,41 +1,40 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomePage from "../views/HomePage.vue";
-import RestaurantsPage from "../views/RestaurantsPage.vue";
-import MenuPage from "../views/MenuPage.vue";
-import CabinetPage from "../views/CabinetPage.vue";
-import LoginPage from "../views/LoginPage.vue";
-import CartPage from "../views/CartPage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomePage,
+    component: () => import("../views/HomePage.vue"),
   },
   {
     path: "/restaurants",
     name: "restaurants",
-    component: RestaurantsPage,
+    component: () => import("../views/RestaurantsPage.vue"),
   },
   {
     path: "/menu",
     name: "menu",
-    component: MenuPage,
+    component: () => import("../views/MenuPage.vue"),
   },
   {
     path: "/cabinet",
     name: "cabinet",
-    component: CabinetPage,
+    component: () => import("../views/CabinetPage.vue"),
   },
   {
     path: "/login",
     name: "login",
-    component: LoginPage,
+    component: () => import("../views/LoginPage.vue"),
+  },
+  {
+    path: "/sign-up",
+    name: "sign-up",
+    component: () => import("../views/SignUpPage.vue"),
   },
   {
     path: "/cart",
     name: "cart",
-    component: CartPage,
+    component: () => import("../views/CartPage.vue"),
   },
 ];
 
