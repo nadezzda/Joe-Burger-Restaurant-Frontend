@@ -34,26 +34,7 @@
     <img src="../assets/pexels-los-muertos-crew-8477419.jpg" width="300px" />
     <img src="../assets/pexels-jonathan-borba-3877675.jpg" width="300px" />
   </div>
-  <div class="statistic">
-    <div class="col">
-      <h1>100500 <br />смачних <br />бургерів</h1>
-    </div>
-    <div class="col">
-      <h1>
-        3<br />
-        роки
-      </h1>
-    </div>
-    <div class="col">
-      <h1>2 <br />заклади</h1>
-    </div>
-    <div class="col">
-      <h1>
-        100500<br />
-        задоволених <br />клієнтів
-      </h1>
-    </div>
-  </div>
+  <statistic-component />
   <div class="menu">
     <h1>Наше меню</h1>
     <p>
@@ -84,26 +65,24 @@
       </div>
     </div>
   </div>
-  <div class="review">
-    <h1>Відгуки</h1>
-    <div class="single-review">
-      <h5>Надія</h5>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex quam
-        perspiciatis commodi alias molestias ratione nesciunt modi repudiandae
-        natus nostrum doloremque ad, nobis excepturi tempora aspernatur porro
-        placeat itaque.
-      </p>
-    </div>
-  </div>
+  <reviews-component />
 </template>
 <script lang="ts">
 import "bootstrap/dist/css/bootstrap.min.css";
+import StatisticComponent from "@/components/StatisticComponent.vue";
+import ReviewsComponent from "@/components/ReviewsComponent.vue";
 export default {
   name: "HomePage",
+  components: {
+    StatisticComponent,
+    ReviewsComponent,
+  },
 };
 </script>
 <style lang="scss" scoped>
+h1 {
+  text-align: center;
+}
 .baner {
   background: url("../assets/pexels-valeria-boltneva-1639562.jpg");
   background-repeat: no-repeat;
@@ -159,19 +138,6 @@ export default {
     margin: 5%;
   }
 }
-.statistic {
-  display: flex;
-  flex-direction: row;
-  background: url("../assets/pexels-engin-akyurt-2271106.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 20px;
-  .col {
-    font-size: 25px;
-    color: white;
-    margin: 100px auto 60px;
-  }
-}
 .menu {
   background-color: rgb(38, 32, 65);
   color: white;
@@ -197,23 +163,6 @@ export default {
   }
   p {
     margin: 0 250px;
-  }
-}
-.review {
-  padding: 60px;
-  .single-review {
-    border: 3px solid rebeccapurple;
-    width: 60%;
-    margin: auto;
-    height: 300px;
-    padding: 20px;
-    h5 {
-      text-align: center;
-      margin-top: 100px;
-    }
-    p {
-      text-align: center;
-    }
   }
 }
 </style>
