@@ -17,6 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/MenuPage.vue"),
   },
   {
+    // path: "/category/:slug",
+    path: "/category",
+    name: "category",
+    component: () => import("../views/CategoryMenu.vue"),
+  },
+  {
     path: "/cabinet",
     name: "cabinet",
     component: () => import("../views/CabinetPage.vue"),
