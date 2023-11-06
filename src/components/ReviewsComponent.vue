@@ -20,6 +20,9 @@ export default {
 <style scoped lang="scss">
 .review {
   padding: 60px;
+  h1 {
+    text-align: center;
+  }
   .single-review {
     border: 3px solid rebeccapurple;
     width: 60%;
