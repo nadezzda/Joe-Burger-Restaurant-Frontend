@@ -1,6 +1,8 @@
 <template>
   <div class="product col" :style="{ backgroundImage: `url(${image})` }">
-    <h3 id="name">{{ name }}</h3>
+    <h3 id="name">
+      <a href="/menu-item">{{ name }}</a>
+    </h3>
     <p id="price">
       <span>{{ price }}грн</span>{{ oldPrice }}грн
     </p>
